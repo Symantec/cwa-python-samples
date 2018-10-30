@@ -59,6 +59,7 @@ cwa_getListofResources.py
 
 Script to get the list of resources for the service id you provide. Following are the services ID that are currently supported by CWA for AWS
 ServiceID:ServiceType
+
 1:VPC
 
 2:IAM Users 
