@@ -59,27 +59,48 @@ cwa_getListofResources.py
 
 Script to get the list of resources for the service id you provide. Following are the services ID that are currently supported by CWA for AWS
 ServiceID:ServiceType
-1:VPC 
+1:VPC
+
 2:IAM Users 
+
 3:IAM Password Policy 
+
 4:VPC Security Groups 
+
 5:Simple Notification Service
+
 6:CloudWatch 
+
 7:CloudTrail 
+
 8:IAM Encryption Keys 
+
 9:IAM 
+
 10:AWS Config
+
 11:IAM Policies 
+
 12:S3
+
 13:EC2 Elastic Block Store
+
 14:EC2 Load Balancers 
+
 15:IAM and ACM Certificates 
+
 16:RDS 
+
 17:CloudFront
+
 18:Amazon Redshift
+
 19:RDS Event subscription
+
 20:EC2 
+
 21:AMIs
+
 22:AWS Account Settings 
 
 Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_getserviceresources
