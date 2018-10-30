@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #################################################################################################################
-# Copyright 2018 Symantec Corporation. All rights reserved.
+# Copyright 2018 Symantec Corporation. All rights reserved. 
 # Script to get Events
 # You need to provide Client ID and Client Secret Key in config.ini file under Credentials sections, to generate
 #  auth token.
