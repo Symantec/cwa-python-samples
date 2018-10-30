@@ -26,51 +26,85 @@ Code Files
 
 -----------------------------------------------------------------------------------------------------------------------
 cwa_generateAuthToken.py
+
 Script to generate Authentication token which will be be used for subsequent API calls.
 Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_token_based_authentication_service
 
 -----------------------------------------------------------------------------------------------------------------------
 cwa_getEvents.py
+
 Script to get events that are generated due to misconfigurations of AWS resources as per policy or checks
 Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_get_event_details
 
 -----------------------------------------------------------------------------------------------------------------------
 cwa_getListofAccounts.py
+
 Script to get the list of all available accounts in the cloud infrastructure
 Refer to CWA REST API at https://apidocs.symantec.com/home/sCWA#_getaccounts
 
 -----------------------------------------------------------------------------------------------------------------------
 cwa_getListofChecksForResoucres.py
+
 Script to get the list of checks along with the check details for the resource id you provide
 Refer to CWA REST API at https://apidocs.symantec.com/home/sCWA#_getchecksforservice
 
 -----------------------------------------------------------------------------------------------------------------------
 cwa_getListofPolicies.py
+
 Script to get the list of all the existing policies. This includes policy information such as policy id and policy name
 Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_getpolicies
 
 -----------------------------------------------------------------------------------------------------------------------
 cwa_getListofResources.py
-Script to get the list of resources for the service id you provide
+
+Script to get the list of resources for the service id you provide. Following are the services ID that are currently supported by CWA for AWS
+ServiceID:ServiceType
+1:VPC 
+2:IAM Users 
+3:IAM Password Policy 
+4:VPC Security Groups 
+5:Simple Notification Service
+6:CloudWatch 
+7:CloudTrail 
+8:IAM Encryption Keys 
+9:IAM 
+10:AWS Config
+11:IAM Policies 
+12:S3
+13:EC2 Elastic Block Store
+14:EC2 Load Balancers 
+15:IAM and ACM Certificates 
+16:RDS 
+17:CloudFront
+18:Amazon Redshift
+19:RDS Event subscription
+20:EC2 
+21:AMIs
+22:AWS Account Settings 
+
 Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_getserviceresources
 
 -----------------------------------------------------------------------------------------------------------------------
 cwa_getListofScanProfiles.py
+
 Script to get the list of existing scan profiles
 Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_getscanprofiles
 
 -----------------------------------------------------------------------------------------------------------------------
 cwa_getListofServices.py
+
 Script to get the list of available services along with service details such as service name, service id, region, and cloud provider
 Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_getservices
 
 -----------------------------------------------------------------------------------------------------------------------
 cwa_startScanUsingAccountAndPolicyIDs.py
+
 Script that lets you start a scan immediately for the given policy id and Account ID. This returns the scan profile id
 Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_startscan
 
 -----------------------------------------------------------------------------------------------------------------------
 cwa_startScanUsingScanProfileID.py
+
 Script that lets you to start scan using a scan profile id.
 Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_startscanforprofile
 
