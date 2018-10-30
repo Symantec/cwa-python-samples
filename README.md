@@ -129,6 +129,6 @@ Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_startscan
 cwa_startScanUsingScanProfileID.py
 
 Script that lets you to start scan using a scan profile id.
-Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_startscanforprofile
+Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_startscanforprofile 
 
 -----------------------------------------------------------------------------------------------------------------------
