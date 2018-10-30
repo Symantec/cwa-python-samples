@@ -160,7 +160,7 @@ def get_checks_for_resource():
             logger.error("get_checks_for_resource(): Failed to get list of resources status code is "
                          + str(checks_list_response.status_code))
     except Exception as ex:
-        logger.error("get_checks_for_resource(): Exception occurred while getting checks  " + str(ex))
+        logger.error("get_checks_for_resource(): Exception occurred while getting checks  " + str(ex)) 
 
 
 if set_request_headers():
