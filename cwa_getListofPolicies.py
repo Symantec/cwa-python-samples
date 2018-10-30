@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python 
 #################################################################################################################
 # Copyright 2018 Symantec Corporation. All rights reserved.
 # Script to get Events
