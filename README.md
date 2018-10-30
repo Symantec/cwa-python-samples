@@ -33,31 +33,31 @@ Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_token_based_aut
 -----------------------------------------------------------------------------------------------------------------------
 cwa_getEvents.py
 
-Script to get events that are generated due to misconfigurations of AWS resources as per policy or checks
+Script to get events that are generated due to misconfigurations of AWS resources as per policy or checks.
 Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_get_event_details
 
 -----------------------------------------------------------------------------------------------------------------------
 cwa_getListofAccounts.py
 
-Script to get the list of all available accounts in the cloud infrastructure
+Script to get the list of all available accounts in the cloud infrastructure.
 Refer to CWA REST API at https://apidocs.symantec.com/home/sCWA#_getaccounts
 
 -----------------------------------------------------------------------------------------------------------------------
 cwa_getListofChecksForResoucres.py
 
-Script to get the list of checks along with the check details for the resource id you provide
+Script to get the list of checks along with the check details for the resource id you provide.
 Refer to CWA REST API at https://apidocs.symantec.com/home/sCWA#_getchecksforservice
 
 -----------------------------------------------------------------------------------------------------------------------
 cwa_getListofPolicies.py
 
-Script to get the list of all the existing policies. This includes policy information such as policy id and policy name
+Script to get the list of all the existing policies. This includes policy information such as policy id and policy name.
 Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_getpolicies
 
 -----------------------------------------------------------------------------------------------------------------------
 cwa_getListofResources.py
 
-Script to get the list of resources for the service id you provide. Following are the services ID that are currently supported by CWA for AWS
+Script to get the list of resources for the service id you provide. Following are the services ID that are currently supported by CWA for AWS:
 
 ServiceID:ServiceType
 
@@ -110,20 +110,20 @@ Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_getserviceresou
 -----------------------------------------------------------------------------------------------------------------------
 cwa_getListofScanProfiles.py
 
-Script to get the list of existing scan profiles
-Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_getscanprofiles
+Script to get the list of existing scan profiles.
+Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_getscanprofiles 
 
 -----------------------------------------------------------------------------------------------------------------------
 cwa_getListofServices.py
 
-Script to get the list of available services along with service details such as service name, service id, region, and cloud provider
-Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_getservices
+Script to get the list of available services along with service details such as service name, service id, region, and cloud provider.
+Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_getservices 
 
 -----------------------------------------------------------------------------------------------------------------------
 cwa_startScanUsingAccountAndPolicyIDs.py
 
-Script that lets you start a scan immediately for the given policy id and Account ID. This returns the scan profile id
-Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_startscan
+Script that lets you start a scan immediately for the given policy id and Account ID. The script returns the scan profile id.
+Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_startscan 
 
 -----------------------------------------------------------------------------------------------------------------------
 cwa_startScanUsingScanProfileID.py
