@@ -103,7 +103,13 @@ ServiceID:ServiceType
 
 21:AMIs
 
-22:AWS Account Settings 
+22:AWS Account Settings
+
+23:Simple Queue Service 
+
+24:VPC Network ACLs
+
+25:VPC Subnets
 
 Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_getserviceresources
 
