@@ -3,9 +3,9 @@ Python code samples for demostrating usage of Symantec Cloud Workload Assurance 
 
 Refer to Symantec CWA API documentation at: https://apidocs.symantec.com/home/SCWA
 
-Before you get started you need a Symantec Cloud Workload Assurance Account. If you do not have one sign up for a trial account using this link, select the 'Cloud Workload Assurance' check box: [TBD]
+Before you get started you need a Symantec Cloud Workload Assurance Account. If you do not have one sign up for a trial account using this link, select the 'Cloud Workload Assurance' check box: https://securitycloud.symantec.com/cc/#/onboard
 
-You can also buy Cloud Workload Assurance from Amazon AWS Market Place that also includes free usage. Click this link: [TBD]
+You can also buy Cloud Workload Assurance from Amazon AWS Market Place that also includes free usage. Click this link: https://aws.amazon.com/marketplace/pp/B07JM2CFK4
 
 After you have activated your account, completed AWS Connection with periodic sync interval; you are ready to start using these samples
 
