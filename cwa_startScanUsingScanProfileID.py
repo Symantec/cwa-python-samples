@@ -44,7 +44,7 @@ CLIENT_ID = 'ClientId'
 CLIENT_SECRET = 'ClientSecretKey'
 CONFIG_CREDS_SECTION = 'Credentials'
 GET_SCAN_PROFILES_URL = 'GetScanProfilesUrl'
-CONFIG_URL_SECTION = 'RequestUrl'
+CONFIG_URL_SECTION = 'RequestURL'
 
 # Getting current working directory
 Current_Working_Dir = os.getcwd()
