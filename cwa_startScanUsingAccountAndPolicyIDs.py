@@ -78,6 +78,7 @@ authurl: None
 start_scan_url: None
 x_epmp_customer_id:  None
 x_epmp_domain_id: None
+cloud_provider='aws' # Correct values are either aws or azure
 accounts: List[str] = ["DUMMY_ACCOUNT_ID"]  # Provide comma delimited account IDs
 policies: List[str] = ["DUMMY_POLICY_ID"]  # Provide comma delimited policy IDs
 
@@ -147,7 +148,7 @@ def start_scan_using_account_and_policy():
     start_scan_using_account_and_policy.start_scan_request['account_ids'] = accounts
     start_scan_using_account_and_policy.start_scan_request['policy_ids'] = policies
     start_scan_using_account_and_policy.start_scan_request['scan_name'] = "Test scan from API" # Provide a scan name
-
+    start_scan_using_account_and_policy.start_scan_request['cloudprovider'] = cloud_provider
     try:
         logger.info("start_scan_using_account_and_policy(): Hitting http request to start scan ")
         request_json = json.dumps(start_scan_using_account_and_policy.start_scan_request)
