@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #################################################################################################################
 # Copyright 2018 Symantec Corporation. All rights reserved. 
-# Script to get Events
+# Script to get list of all services 
 # You need to provide Client ID and Client Secret Key in config.ini file under Credentials sections, to generate
 #  auth token.
 # These keys can be found on CWA customer portal, once you are logged in navigate to Settings->API Keys
@@ -149,7 +149,7 @@ def get_list_of_services():
             logger.error("get_list_of_services(): Failed to get list of services, status code is "
                          + str(service_list_response.status_code))
     except Exception as ex:
-        logger.error("get_list_of_services(): Exception occurred while retriving policies  " + str(ex))
+        logger.error("get_list_of_services(): Exception occurred while retrieving services  " + str(ex))
 
 
 if set_request_headers():
