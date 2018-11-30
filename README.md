@@ -7,8 +7,7 @@ Before you get started you need a Symantec Cloud Workload Assurance Account. If 
 
 You can also buy Cloud Workload Assurance from Amazon AWS Market Place that also includes free usage. Click this link: https://aws.amazon.com/marketplace/pp/B07JM2CFK4
 
-After you have activated your account, completed AWS Connection with periodic sync interval; you are ready to start using these samples
-You can use these samples with Azure connections as well.
+After you have activated your account, completed AWS or Azure Connection with periodic sync interval; you are ready to start using these samples.
 First step is to Create API access keys. After login to CWA console, go to 'Settings' page and click on 'API Keys' tab
 
 Copy following API secret keys for your CWA tenant ID information and secure them
