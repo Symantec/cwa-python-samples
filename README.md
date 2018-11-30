@@ -8,7 +8,7 @@ Before you get started you need a Symantec Cloud Workload Assurance Account. If 
 You can also buy Cloud Workload Assurance from Amazon AWS Market Place that also includes free usage. Click this link: https://aws.amazon.com/marketplace/pp/B07JM2CFK4
 
 After you have activated your account, completed AWS Connection with periodic sync interval; you are ready to start using these samples
-
+You can use these samples with Azure connections as well.
 First step is to Create API access keys. After login to CWA console, go to 'Settings' page and click on 'API Keys' tab
 
 Copy following API secret keys for your CWA tenant ID information and secure them
@@ -33,19 +33,19 @@ Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_token_based_aut
 -----------------------------------------------------------------------------------------------------------------------
 cwa_getEvents.py
 
-Script to get events that are generated due to misconfigurations of AWS resources as per policy or checks.
+Script to get events that are generated due to misconfigurations of AWS/Azure resources as per policy or checks.
 Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_get_event_details
 
 -----------------------------------------------------------------------------------------------------------------------
 cwa_getListofAccounts.py
 
-Script to get the list of all available accounts in the cloud infrastructure.
+Script to get the list of all available AWS and Azure accounts in the cloud infrastructure.
 Refer to CWA REST API at https://apidocs.symantec.com/home/sCWA#_getaccounts
 
 -----------------------------------------------------------------------------------------------------------------------
 cwa_getListofChecksForResoucres.py
 
-Script to get the list of checks along with the check details for the resource id you provide.
+Script to get the list of checks along with the check details for the AWS and Azure resources' id you provide.
 Refer to CWA REST API at https://apidocs.symantec.com/home/sCWA#_getchecksforservice
 
 -----------------------------------------------------------------------------------------------------------------------
@@ -57,59 +57,40 @@ Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_getpolicies
 -----------------------------------------------------------------------------------------------------------------------
 cwa_getListofResources.py
 
-Script to get the list of resources for the service id you provide. Following are the services ID that are currently supported by CWA for AWS:
+Script to get the list of resources for the service id you provide. Following are the services ID that are currently supported by CWA for AWS and Azure:
 
-ServiceID:ServiceType
+ServiceID:ServiceType:Cloud Provider
 
-1:VPC
-
-2:IAM Users 
-
-3:IAM Password Policy 
-
-4:VPC Security Groups 
-
-5:Simple Notification Service
-
-6:CloudWatch 
-
-7:CloudTrail 
-
-8:IAM Encryption Keys 
-
-9:IAM 
-
-10:AWS Config
-
-11:IAM Policies 
-
-12:S3
-
-13:EC2 Elastic Block Store
-
-14:EC2 Load Balancers 
-
-15:IAM and ACM Certificates 
-
-16:RDS 
-
-17:CloudFront
-
-18:Amazon Redshift
-
-19:RDS Event subscription
-
-20:EC2 
-
-21:AMIs
-
-22:AWS Account Settings
-
-23:Simple Queue Service 
-
-24:VPC Network ACLs
-
-25:VPC Subnets
+1:VPC:AWS
+2:IAM Users:AWS
+3:IAM Password Policy:AWS
+4:VPC Security Groups:AWS
+5:Simple Notification Service:AWS
+6:CloudWatch:AWS
+7:CloudTrail:AWS
+8:IAM Encryption Keys:AWS
+9:IAM:AWS
+10:AWS Config:AWS
+11:IAM Policies:AWS
+12:S3:AWS
+13:EC2 Elastic Block Store:AWS
+14:EC2 Load Balancers:AWS
+15:IAM and ACM Certificates:AWS
+16:RDS:AWS
+17:CloudFront:AWS
+18:Amazon Redshift:AWS
+19:RDS Event subscription:AWS
+20:EC2:AWS
+21:AMIs:AWS
+22:AWS Account Settings:AWS
+23:Simple Queue Service:AWS
+24:VPC Network ACLs:AWS
+25:VPC Subnets:AWS
+26:CloudFormation:AWS
+27:Virtual Networks:AZURE
+28:Virtual Machines:AZURE
+29:Subnets:AZURE
+30:IAM Roles:AWS
 
 Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_getserviceresources
 
