@@ -1,5 +1,5 @@
 # cwa-python-samples
-Python code samples for demostrating usage of Symantec Cloud Workload Assurance RESTful API functions
+Python code samples for demonstrating usage of Symantec Cloud Workload Assurance (SCWA) RESTful API functions
 
 Refer to Symantec CWA API documentation at: https://apidocs.symantec.com/home/SCWA
 
