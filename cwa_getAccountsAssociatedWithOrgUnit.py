@@ -9,7 +9,7 @@
 # python cwa_getAccountsAssociatedWithOrgUnit.py
 # On success, this script will delete specified org unit.
 # for rest of the request.
-# You need to provide a list of comma seperated org units at line 68 
+# You need to provide a list of comma seperated org units at line 73 
 # for example ["ORGUNIT_ID1","ORGUNIT_ID2"]
 # Sample output of script will be 
 #* Account ACCOUNTID1 associated with org unit BcKKbRAsi9w
@@ -70,11 +70,11 @@ access_token = None
 authurl = None
 x_epmp_customer_id = None
 x_epmp_domain_id = None
-org_unit_ids = ["xrIV6PoURw-BcKKbRAsi9w"]
+org_unit_ids = []
 
 if not org_unit_ids:
     logger.error("Provide org unit ids as value of variable, \"org_unit_id\" "
-                 " at line 68 , for example [\"ORGUNIT_ID1\",\"ORGUNIT_ID2\"]")
+                 " at line 73 , for example [\"ORGUNIT_ID1\",\"ORGUNIT_ID2\"]")
     exit()
 
 # Defining method to hit http request and to generate auth token
