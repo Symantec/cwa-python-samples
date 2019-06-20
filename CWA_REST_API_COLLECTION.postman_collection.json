@@ -761,53 +761,6 @@
 			"response": []
 		},
 		{
-			"name": "Delete An Org Unit",
-			"request": {
-				"method": "DELETE",
-				"header": [
-					{
-						"key": "x-epmp-customer-id",
-						"value": "{{x-epmp-customer-id}}"
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json"
-					},
-					{
-						"key": "x-epmp-domain-id",
-						"value": "{{x-epmp-domain-id}}"
-					},
-					{
-						"key": "authorization",
-						"value": " {{access_token}}"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "https://scwp.securitycloud.symantec.com/dcs-service/scwa/v1/apis/org_units/{{ORG_UNIT_ID}}",
-					"protocol": "https",
-					"host": [
-						"scwp",
-						"securitycloud",
-						"symantec",
-						"com"
-					],
-					"path": [
-						"dcs-service",
-						"scwa",
-						"v1",
-						"apis",
-						"org_units",
-						"{{ORG_UNIT_ID}}"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "Get Events",
 			"request": {
 				"method": "POST",
