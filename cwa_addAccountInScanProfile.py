@@ -41,7 +41,6 @@ CLIENT_ID = 'ClientId'
 CLIENT_SECRET = 'ClientSecretKey'
 CONFIG_CREDS_SECTION = 'Credentials'
 CONFIG_URL_SECTION = 'RequestURL'
-ORG_UNIT_URL = 'OrgUnitUrl'
 ADD_ACCOUNTS_SCANPROFILE = 'AddAccountScanProfile'
 
 # Getting current working directory
