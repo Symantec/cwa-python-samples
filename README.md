@@ -38,6 +38,9 @@ Python code samples for demonstrating usage of Symantec Cloud Workload Assurance
   - cwa_getOrgUnitHierarchy.py
   - cwa_getScanStausUsingScapProfileID.py
 
+  - [CHANGELOG](CHANGELOG.md)
+  - [License](LICENSE)
+
 -----------------------------------------------------------------------------------------------------------------------
 
 ## Setup
@@ -239,6 +242,12 @@ Usage:
 
 Sample:
 >  `python cwa_startScanUsingScanProfileID.py #`
+
+-----------------------------------------------------------------------------------------------------------------------
+
+## Change Log
+
+See [CHANGELOG](CHANGELOG.md).
 
 -----------------------------------------------------------------------------------------------------------------------
 
