@@ -15,16 +15,19 @@ Python code samples for demonstrating usage of Symantec Cloud Workload Assurance
 -----------------------------------------------------------------------------------------------------------------------
 
 - [CWA Python Samples](#cwa-python-samples)
-  - [Setup](#setup)
   - [Postman](#postman)
+  - [Setup](#setup)
+  - [CHANGELOG](CHANGELOG.md)
+  - [License](LICENSE)
+
+**Scripts**
+
   - [Generate Auth Token](#Generate-Auth-Token)
-
-  - cwa_addAccountInScanProfile.py
-  - cwa_associateAccountToOrgUnit.py
-  - cwa_createChildOrgUnitUnderRootOU.py
-  - cwa_deleteOrgUnit.py
-  - cwa_getAccountsAssociatedWithOrgUnit.py
-
+  - [Add Account In Scan Profile](#Add-Account-In-Scan-Profile)
+  - [Associate Account To Org Unit](#Associate-Account-To-Org-Unit)
+  - [Create Child Org Unit Under Root OU](#Create-Child-Org-Unit-Under-Root-OU)
+  - [Delete Org Unit](#Delete-Org-Unit)
+  - [Get Accounts Associated With Org Unit](#Get-Accounts-Associated-With-Org-Unit)
   - [Get Events](#Get-Events)
   - [Get List Of Accounts](#Get-List-Of-Accounts)
   - [Get List Of Checks For Resoucres](#Get-List-Of-Checks-For-Resoucres)
@@ -32,14 +35,20 @@ Python code samples for demonstrating usage of Symantec Cloud Workload Assurance
   - [Get List Of Resources](#Get-List-Of-Resources)
   - [Get List Of Scan Profiles](#Get-List-Of-Scan-Profiles)
   - [Get List Of Services](#Get-List-Of-Services)
+  - [Get Org Unit Hierarchy](#Get-Org-Unit-Hierarchy)
+  - [Get Scan Staus Using Scap Profile ID](#Get-Scan-Staus-Using-Scap-Profile-ID)
   - [Start Scan Using Account And Policy IDs](#Start-Scan-Using-Account-And-Policy-IDs)
   - [Start Scan Using Scan ProfileID](#Start-Scan-Using-Scan-ProfileID)
 
-  - cwa_getOrgUnitHierarchy.py
-  - cwa_getScanStausUsingScapProfileID.py
+-----------------------------------------------------------------------------------------------------------------------
 
-  - [CHANGELOG](CHANGELOG.md)
-  - [License](LICENSE)
+## Postman
+
+A Postman collection allows you to test the APIs, import this file and created a new environment:
+
+`client_id` and `client_secret`.
+
+- [CWA_REST_API_COLLECTION](CWA_REST_API_COLLECTION.postman_collection.json)
 
 -----------------------------------------------------------------------------------------------------------------------
 
@@ -66,15 +75,6 @@ Copy following API secret keys for your CWA tenant ID information and secure the
 
 -----------------------------------------------------------------------------------------------------------------------
 
-## Postman
-
-A Postman collection allows you to test the APIs, import this file and created a new environment:
-
-`client_id` and `client_secret`.
-
-- [CWA_REST_API_COLLECTION](CWA_REST_API_COLLECTION.postman_collection.json)
-
------------------------------------------------------------------------------------------------------------------------
 **Code Files**
 
 -----------------------------------------------------------------------------------------------------------------------
@@ -91,6 +91,71 @@ Sample:
 >  `python cwa_generateAuthToken.py #`
 
 -----------------------------------------------------------------------------------------------------------------------
+## Add Account In Scan Profile
+[cwa_addAccountInScanProfile.py](cwa_addAccountInScanProfile.py)
+
+*Desc*
+
+Usage: 
+> `python cwa_addAccountInScanProfile.py -param ??`
+
+Sample:
+>  `python cwa_addAccountInScanProfile.py #`
+
+-----------------------------------------------------------------------------------------------------------------------
+
+## Associate Account To Org Unit
+[cwa_associateAccountToOrgUnit.py](cwa_associateAccountToOrgUnit.py)
+
+*Desc*
+
+Usage: 
+> `python cwa_associateAccountToOrgUnit.py -param ??`
+
+Sample:
+>  `python cwa_associateAccountToOrgUnit.py #`
+
+-----------------------------------------------------------------------------------------------------------------------
+
+## Create Child Org Unit Under Root OU
+[cwa_createChildOrgUnitUnderRootOU.py](cwa_createChildOrgUnitUnderRootOU.py)
+
+*Desc*
+
+Usage: 
+> `python cwa_createChildOrgUnitUnderRootOU.py -param ??`
+
+Sample:
+>  `python cwa_createChildOrgUnitUnderRootOU.py #`
+
+-----------------------------------------------------------------------------------------------------------------------
+
+## Delete Org Unit
+[cwa_deleteOrgUnit.py](cwa_deleteOrgUnit.py)
+
+*Desc*
+
+Usage: 
+> `python cwa_deleteOrgUnit.py -param ??`
+
+Sample:
+>  `python cwa_deleteOrgUnit.py #`
+
+-----------------------------------------------------------------------------------------------------------------------
+
+## Get Accounts Associated With Org Unit
+[cwa_getAccountsAssociatedWithOrgUnit.py](cwa_getAccountsAssociatedWithOrgUnit.py)
+
+*Desc*
+
+Usage: 
+> `python cwa_getAccountsAssociatedWithOrgUnit.py -param ??`
+
+Sample:
+>  `python cwa_getAccountsAssociatedWithOrgUnit.py #`
+
+-----------------------------------------------------------------------------------------------------------------------
+
 ## Get Events
 [cwa_getEvents.py](wa_getEvents.py)
 
@@ -216,6 +281,32 @@ Usage:
 
 Sample:
 >  `python cwa_getListofServices.py #`
+
+-----------------------------------------------------------------------------------------------------------------------
+
+## Get Org Unit Hierarchy
+[cwa_getOrgUnitHierarchy.py](cwa_getOrgUnitHierarchy.py)
+
+*Desc*
+
+Usage: 
+> `python cwa_getOrgUnitHierarchy.py -param ??`
+
+Sample:
+>  `python cwa_getOrgUnitHierarchy.py #`
+
+-----------------------------------------------------------------------------------------------------------------------
+
+## Get Scan Staus Using Scap Profile ID
+[cwa_getScanStausUsingScapProfileID.py](cwa_getScanStausUsingScapProfileID.py)
+
+*Desc*
+
+Usage: 
+> `python cwa_getScanStausUsingScapProfileID.py -param ??`
+
+Sample:
+>  `python cwa_getScanStausUsingScapProfileID.py #`
 
 -----------------------------------------------------------------------------------------------------------------------
 ## Start Scan Using Account And Policy IDs
