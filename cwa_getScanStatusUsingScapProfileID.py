@@ -6,7 +6,7 @@
 #  auth token.
 # These keys can be found on CWA customer portal, once you are logged in navigate to Settings->API Keys
 # The config file must be in the same directory as of the script.
-# python cwa_getScanStausUsingScapProfileID.py
+# python cwa_getScanStatusUsingScapProfileID.py
 # On success, this script will provide status of a given scan profile_iD.
 #################################################################################################################
 import json
@@ -18,7 +18,7 @@ from pathlib import Path
 
 
 # create logger
-logger = logging.getLogger("cwa_getScanStausUsingScapProfileID")
+logger = logging.getLogger("cwa_getScanStatusUsingScapProfileID")
 logger.setLevel(logging.INFO)
 
 # create console handler (ch) and set level to debug
@@ -39,7 +39,7 @@ AUTHURL = 'AuthUrl'
 CLIENT_ID = 'ClientId'
 CLIENT_SECRET = 'ClientSecretKey'
 CONFIG_CREDS_SECTION = 'Credentials'
-GET_SCAN_RUN_STAUTS_URL = 'GetScanRunStatusUrl'
+GET_SCAN_RUN_STATUS_URL = 'GetScanRunStatusUrl'
 CONFIG_URL_SECTION = 'RequestURL'
 SCAN_PROFILE_ID='DUMMY_SCAN_PROFILE_ID' # Provide a scan profile id
 
@@ -47,18 +47,18 @@ SCAN_PROFILE_ID='DUMMY_SCAN_PROFILE_ID' # Provide a scan profile id
 # Getting current working directory
 Current_Working_Dir = os.getcwd()
 
-logger.info("cwa_getScanStausUsingScapProfileID: Current working Directory is " + Current_Working_Dir)
-logger.info("cwa_getScanStausUsingScapProfileID: Checking if config file present in current directory")
+logger.info("cwa_getScanStatusUsingScapProfileID: Current working Directory is " + Current_Working_Dir)
+logger.info("cwa_getScanStatusUsingScapProfileID: Checking if config file present in current directory")
 
 config_file = Path(Current_Working_Dir+'/config.ini')
 
 # Checking if config file present
 if not config_file.is_file():
-    logger.error("cwa_getScanStausUsingScapProfileID: File config.ini not found in current working directory, place config.ini "
+    logger.error("cwa_getScanStatusUsingScapProfileID: File config.ini not found in current working directory, place config.ini "
                  "fle in directory \n " + Current_Working_Dir)
     exit()
 else :
-    logger.info("cwa_getScanStausUsingScapProfileID: Configfile found in directory "+Current_Working_Dir)
+    logger.info("cwa_getScanStatusUsingScapProfileID: Configfile found in directory "+Current_Working_Dir)
 
 
 # Creating http request and headers
@@ -113,7 +113,7 @@ def set_request_headers():
         global authurl
         authurl = config.get(CONFIG_URL_SECTION, AUTHURL)
         global scan_status_url
-        scan_status_url = config.get(CONFIG_URL_SECTION, GET_SCAN_RUN_STAUTS_URL)
+        scan_status_url = config.get(CONFIG_URL_SECTION, GET_SCAN_RUN_STATUS_URL)
         if client_id == "" or client_secret == "" or authurl == "" or scan_status_url == "":
             logger.error("set_request_headers(): One or more values empty in config_file")
             return headers_got_set
