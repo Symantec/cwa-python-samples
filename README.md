@@ -44,7 +44,9 @@ Python code samples for demonstrating usage of Symantec Cloud Workload Assurance
 
 ## Postman
 
-A Postman collection allows you to test the APIs, import this file and created a new environment:
+A Postman collection allows you to test the APIs, import this file.
+
+Also create a new environment with the following keys and add your respective values:
 
 `client_id` and `client_secret`.
 
@@ -85,48 +87,48 @@ Script to generate Authentication token which will be be used for subsequent API
 Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_token_based_authentication_service
 
 Usage: 
-> `python cwa_generateAuthToken.py -param ??`
+> `python cwa_generateAuthToken.py`
 
 Sample:
->  `python cwa_generateAuthToken.py #`
+>  `python cwa_generateAuthToken.py`
 
 -----------------------------------------------------------------------------------------------------------------------
 ## Add Account In Scan Profile
 [cwa_addAccountInScanProfile.py](cwa_addAccountInScanProfile.py)
 
-*Desc*
+This API service is used to add accounts in an existing scan profile. Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_addaaccountforprofile
 
 Usage: 
-> `python cwa_addAccountInScanProfile.py -param ??`
+> `python cwa_addAccountInScanProfile.py`
 
 Sample:
->  `python cwa_addAccountInScanProfile.py #`
+>  `python cwa_addAccountInScanProfile.py`
 
 -----------------------------------------------------------------------------------------------------------------------
 
 ## Associate Account To Org Unit
 [cwa_associateAccountToOrgUnit.py](cwa_associateAccountToOrgUnit.py)
 
-*Desc*
+This API service is used to associate accounts to an organization unit. Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_addaaccountforprofile
 
 Usage: 
-> `python cwa_associateAccountToOrgUnit.py -param ??`
+> `python cwa_associateAccountToOrgUnit.py`
 
 Sample:
->  `python cwa_associateAccountToOrgUnit.py #`
+>  `python cwa_associateAccountToOrgUnit.py`
 
 -----------------------------------------------------------------------------------------------------------------------
 
 ## Create Child Org Unit Under Root OU
 [cwa_createChildOrgUnitUnderRootOU.py](cwa_createChildOrgUnitUnderRootOU.py)
 
-*Desc*
+This API service is used to create an organization unit. Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_createchildorgunit
 
 Usage: 
-> `python cwa_createChildOrgUnitUnderRootOU.py -param ??`
+> `python cwa_createChildOrgUnitUnderRootOU.py`
 
 Sample:
->  `python cwa_createChildOrgUnitUnderRootOU.py #`
+>  `python cwa_createChildOrgUnitUnderRootOU.py`
 
 -----------------------------------------------------------------------------------------------------------------------
 
@@ -136,23 +138,23 @@ Sample:
 *Desc*
 
 Usage: 
-> `python cwa_deleteOrgUnit.py -param ??`
+> `python cwa_deleteOrgUnit.py`
 
 Sample:
->  `python cwa_deleteOrgUnit.py #`
+>  `python cwa_deleteOrgUnit.py`
 
 -----------------------------------------------------------------------------------------------------------------------
 
 ## Get Accounts Associated With Org Unit
 [cwa_getAccountsAssociatedWithOrgUnit.py](cwa_getAccountsAssociatedWithOrgUnit.py)
 
-*Desc*
+This API service retrieves a list of accounts associated with an organization unit. Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_getassociatedaccounts
 
 Usage: 
-> `python cwa_getAccountsAssociatedWithOrgUnit.py -param ??`
+> `python cwa_getAccountsAssociatedWithOrgUnit.py`
 
 Sample:
->  `python cwa_getAccountsAssociatedWithOrgUnit.py #`
+>  `python cwa_getAccountsAssociatedWithOrgUnit.py`
 
 -----------------------------------------------------------------------------------------------------------------------
 
@@ -163,10 +165,10 @@ Script to get events that are generated due to misconfigurations of AWS/Azure re
 Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_get_event_details
 
 Usage: 
-> `python cwa_getEvents.py -param ??`
+> `python cwa_getEvents.py`
 
 Sample:
->  `python cwa_getEvents.py #`
+>  `python cwa_getEvents.py`
 
 -----------------------------------------------------------------------------------------------------------------------
 ## Get List Of Accounts
@@ -176,10 +178,10 @@ Script to get the list of all available AWS and Azure accounts in the cloud infr
 Refer to CWA REST API at https://apidocs.symantec.com/home/sCWA#_getaccounts
 
 Usage: 
-> `python cwa_getListofAccounts.py -param ??`
+> `python cwa_getListofAccounts.py`
 
 Sample:
->  `python cwa_getListofAccounts.py #`
+>  `python cwa_getListofAccounts.py`
 
 -----------------------------------------------------------------------------------------------------------------------
 ## Get List Of Checks For Resoucres
@@ -189,10 +191,10 @@ Script to get the list of checks along with the check details for the AWS and Az
 Refer to CWA REST API at https://apidocs.symantec.com/home/sCWA#_getchecksforservice
 
 Usage: 
-> `python cwa_getListofChecksForResoucres.py -param ??`
+> `python cwa_getListofChecksForResoucres.py`
 
 Sample:
->  `python cwa_getListofChecksForResoucres.py #`
+>  `python cwa_getListofChecksForResoucres.py`
 
 -----------------------------------------------------------------------------------------------------------------------
 ## Get List Of Policies
@@ -202,10 +204,10 @@ Script to get the list of all the existing policies. This includes policy inform
 Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_getpolicies
 
 Usage: 
-> `python cwa_getListofPolicies.py -param ??`
+> `python cwa_getListofPolicies.py`
 
 Sample:
->  `python cwa_getListofPolicies.py #`
+>  `python cwa_getListofPolicies.py`
 
 -----------------------------------------------------------------------------------------------------------------------
 ## Get List Of Resources
@@ -251,10 +253,10 @@ ServiceID:ServiceType:Cloud Provider
 Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_getserviceresources
 
 Usage: 
-> `python cwa_getListofResources.py -param ??`
+> `python cwa_getListofResources.py`
 
 Sample:
->  `python cwa_getListofResources.py #`
+>  `python cwa_getListofResources.py`
 
 -----------------------------------------------------------------------------------------------------------------------
 ## Get List Of Scan Profiles
@@ -264,10 +266,10 @@ Script to get the list of existing scan profiles.
 Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_getscanprofiles 
 
 Usage: 
-> `python cwa_getListofScanProfiles.py -param ??`
+> `python cwa_getListofScanProfiles.py`
 
 Sample:
->  `python cwa_getListofScanProfiles.py #`
+>  `python cwa_getListofScanProfiles.py`
 
 -----------------------------------------------------------------------------------------------------------------------
 ## Get List Of Services
@@ -277,30 +279,32 @@ Script to get the list of available services along with service details such as 
 Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_getservices 
 
 Usage: 
-> `python cwa_getListofServices.py -param ??`
+> `python cwa_getListofServices.py`
 
 Sample:
->  `python cwa_getListofServices.py #`
+>  `python cwa_getListofServices.py`
 
 -----------------------------------------------------------------------------------------------------------------------
 
 ## Get Org Unit Hierarchy
 [cwa_getOrgUnitHierarchy.py](cwa_getOrgUnitHierarchy.py)
 
-*Desc*
+This API service retrieves the list of organization units with hierarchical structure. Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_getorgunithierarchy
 
 Usage: 
-> `python cwa_getOrgUnitHierarchy.py -param ??`
+> `python cwa_getOrgUnitHierarchy.py`
 
 Sample:
->  `python cwa_getOrgUnitHierarchy.py #`
+>  `python cwa_getOrgUnitHierarchy.py`
 
 -----------------------------------------------------------------------------------------------------------------------
 
 ## Get Scan Staus Using Scap Profile ID
 [cwa_getScanStausUsingScapProfileID.py](cwa_getScanStausUsingScapProfileID.py)
 
-*Desc*
+This API service retrieves the status of the job associated to the scan profile ID that you provide. Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_getjobstatus
+
+Provide a `SCAN_PROFILE_ID`.
 
 Usage: 
 > `python cwa_getScanStausUsingScapProfileID.py -param ??`
@@ -316,10 +320,10 @@ Script that lets you start a scan immediately for the given policy id and Accoun
 Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_startscan 
 
 Usage: 
-> `python cwa_startScanUsingAccountAndPolicyIDs.py -param ??`
+> `python cwa_startScanUsingAccountAndPolicyIDs.py`
 
 Sample:
->  `python cwa_startScanUsingAccountAndPolicyIDs.py #`
+>  `python cwa_startScanUsingAccountAndPolicyIDs.py`
 
 -----------------------------------------------------------------------------------------------------------------------
 ## Start Scan Using Scan ProfileID
@@ -329,10 +333,10 @@ Script that lets you to start scan using a scan profile id.
 Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_startscanforprofile 
 
 Usage: 
-> `python cwa_startScanUsingScanProfileID.py -param ??`
+> `python cwa_startScanUsingScanProfileID.py`
 
 Sample:
->  `python cwa_startScanUsingScanProfileID.py #`
+>  `python cwa_startScanUsingScanProfileID.py`
 
 -----------------------------------------------------------------------------------------------------------------------
 
