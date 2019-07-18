@@ -36,7 +36,7 @@ Python code samples for demonstrating usage of Symantec Cloud Workload Assurance
   - [Get List Of Scan Profiles](#Get-List-Of-Scan-Profiles)
   - [Get List Of Services](#Get-List-Of-Services)
   - [Get Org Unit Hierarchy](#Get-Org-Unit-Hierarchy)
-  - [Get Scan Staus Using Scap Profile ID](#Get-Scan-Staus-Using-Scap-Profile-ID)
+  - [Get Scan Staus Using Scan Profile ID](#Get-Scan-Staus-Using-Scan-Profile-ID)
   - [Start Scan Using Account And Policy IDs](#Start-Scan-Using-Account-And-Policy-IDs)
   - [Start Scan Using Scan ProfileID](#Start-Scan-Using-Scan-ProfileID)
 
