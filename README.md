@@ -36,7 +36,7 @@ Python code samples for demonstrating usage of Symantec Cloud Workload Assurance
   - [Get List Of Scan Profiles](#Get-List-Of-Scan-Profiles)
   - [Get List Of Services](#Get-List-Of-Services)
   - [Get Org Unit Hierarchy](#Get-Org-Unit-Hierarchy)
-  - [Get Scan Staus Using Scan Profile ID](#Get-Scan-Staus-Using-Scan-Profile-ID)
+  - [Get Scan Status Using Scan Profile ID](#Get-Scan-Status-Using-Scan-Profile-ID)
   - [Start Scan Using Account And Policy IDs](#Start-Scan-Using-Account-And-Policy-IDs)
   - [Start Scan Using Scan ProfileID](#Start-Scan-Using-Scan-ProfileID)
 
@@ -299,18 +299,18 @@ Sample:
 
 -----------------------------------------------------------------------------------------------------------------------
 
-## Get Scan Staus Using Scan Profile ID
-[cwa_getScanStausUsingScanProfileID.py](cwa_getScanStausUsingScanProfileID.py)
+## Get Scan Status Using Scan Profile ID
+[cwa_getScanStatusUsingScanProfileID.py](cwa_getScanStatusUsingScanProfileID.py)
 
 This API service retrieves the status of the job associated to the scan profile ID that you provide. Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_getjobstatus
 
 Provide a `SCAN_PROFILE_ID`.
 
 Usage: 
-> `python cwa_getScanStausUsingScanProfileID.py -param ??`
+> `python cwa_getScanStatusUsingScanProfileID.py`
 
 Sample:
->  `python cwa_getScanStausUsingScanProfileID.py #`
+>  `python cwa_getScanStatusUsingScanProfileID.py`
 
 -----------------------------------------------------------------------------------------------------------------------
 ## Start Scan Using Account And Policy IDs
