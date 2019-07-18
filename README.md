@@ -299,18 +299,18 @@ Sample:
 
 -----------------------------------------------------------------------------------------------------------------------
 
-## Get Scan Staus Using Scap Profile ID
-[cwa_getScanStausUsingScapProfileID.py](cwa_getScanStausUsingScapProfileID.py)
+## Get Scan Staus Using Scan Profile ID
+[cwa_getScanStausUsingScanProfileID.py](cwa_getScanStausUsingScanProfileID.py)
 
 This API service retrieves the status of the job associated to the scan profile ID that you provide. Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_getjobstatus
 
 Provide a `SCAN_PROFILE_ID`.
 
 Usage: 
-> `python cwa_getScanStausUsingScapProfileID.py -param ??`
+> `python cwa_getScanStausUsingScanProfileID.py -param ??`
 
 Sample:
->  `python cwa_getScanStausUsingScapProfileID.py #`
+>  `python cwa_getScanStausUsingScanProfileID.py #`
 
 -----------------------------------------------------------------------------------------------------------------------
 ## Start Scan Using Account And Policy IDs
