@@ -6,7 +6,7 @@
 #  auth token.
 # These keys can be found on CWA customer portal, once you are logged in navigate to Settings->API Keys
 # The config file must be in the same directory as of the script.
-# python cwa_getScanStatusUsingScapProfileID.py
+# python cwa_getScanStatusUsingScanProfileID.py
 # On success, this script will provide status of a given scan profile_iD.
 #################################################################################################################
 import json
@@ -18,7 +18,7 @@ from pathlib import Path
 
 
 # create logger
-logger = logging.getLogger("cwa_getScanStatusUsingScapProfileID")
+logger = logging.getLogger("cwa_getScanStatusUsingScanProfileID")
 logger.setLevel(logging.INFO)
 
 # create console handler (ch) and set level to debug
@@ -47,18 +47,18 @@ SCAN_PROFILE_ID='DUMMY_SCAN_PROFILE_ID' # Provide a scan profile id
 # Getting current working directory
 Current_Working_Dir = os.getcwd()
 
-logger.info("cwa_getScanStatusUsingScapProfileID: Current working Directory is " + Current_Working_Dir)
-logger.info("cwa_getScanStatusUsingScapProfileID: Checking if config file present in current directory")
+logger.info("cwa_getScanStatusUsingScanProfileID: Current working Directory is " + Current_Working_Dir)
+logger.info("cwa_getScanStatusUsingScanProfileID: Checking if config file present in current directory")
 
 config_file = Path(Current_Working_Dir+'/config.ini')
 
 # Checking if config file present
 if not config_file.is_file():
-    logger.error("cwa_getScanStatusUsingScapProfileID: File config.ini not found in current working directory, place config.ini "
+    logger.error("cwa_getScanStatusUsingScanProfileID: File config.ini not found in current working directory, place config.ini "
                  "fle in directory \n " + Current_Working_Dir)
     exit()
 else :
-    logger.info("cwa_getScanStatusUsingScapProfileID: Configfile found in directory "+Current_Working_Dir)
+    logger.info("cwa_getScanStatusUsingScanProfileID: Configfile found in directory "+Current_Working_Dir)
 
 
 # Creating http request and headers
