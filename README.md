@@ -39,6 +39,9 @@ Python code samples for demonstrating usage of Symantec Cloud Workload Assurance
   - [Get Scan Status Using Scan Profile ID](#Get-Scan-Status-Using-Scan-Profile-ID)
   - [Start Scan Using Account And Policy IDs](#Start-Scan-Using-Account-And-Policy-IDs)
   - [Start Scan Using Scan ProfileID](#Start-Scan-Using-Scan-ProfileID)
+  - [Get Cloud Connections](#Get-Cloud-Connections)
+  - [Delete Cloud Connection](#Delete Cloud Connection)
+  - [Get Accounts Using ConnectionId](#Get-Accounts-Using-ConnectionId)
 
 -----------------------------------------------------------------------------------------------------------------------
 
@@ -337,6 +340,49 @@ Usage:
 
 Sample:
 >  `python cwa_startScanUsingScanProfileID.py`
+
+-----------------------------------------------------------------------------------------------------------------------
+## Get Cloud Connections
+[cwa_get_cloud_connections.py](cwa_get_cloud_connections.py)
+
+Use this API to get a list of all the existing connections, create a new AWS connection, and update an existing AWS connection.
+Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_manage_aws_accounts
+
+Usage: 
+> `python cwa_get_cloud_connections.py`
+
+Sample:
+>  `python cwa_get_cloud_connections.py`
+
+-----------------------------------------------------------------------------------------------------------------------
+## Delete Cloud Connection
+[cwa_delete_cloud_connection.py](cwa_delete_cloud_connection.py)
+
+Script to delete cloud connection using connection id
+
+Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_manage_aws_accounts
+
+You need to provide value of "connection_id"  at line 68 for example '123'
+
+Usage: 
+> `python cwa_delete_cloud_connection.py`
+
+Sample:
+>  `python cwa_delete_cloud_connection.py`
+
+-----------------------------------------------------------------------------------------------------------------------
+## Get Accounts Using ConnectionId
+[cwa_getaccounts_using_connectionid.py](cwa_getaccounts_using_connectionid.py)
+
+Refer to CWA REST API at https://apidocs.symantec.com/home/SCWA#_manage_aws_accounts
+
+You need to provide value of "connection_id"  at line 68 for example '123'
+
+Usage: 
+> `python cwa_getaccounts_using_connectionid.py`
+
+Sample:
+>  `python cwa_getaccounts_using_connectionid.py`
 
 -----------------------------------------------------------------------------------------------------------------------
 
