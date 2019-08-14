@@ -713,6 +713,54 @@
 			"response": []
 		},
 		{
+						"name": "Get Accounts Associated to an Org Unit",		
+			"request": {		
+				"method": "GET",		
+				"header": [		
+					{		
+						"key": "Content-Type",		
+						"value": "application/json",		
+						"type": "text"		
+					},		
+					{		
+						"key": "x-epmp-customer-id",		
+						"value": "{{x-epmp-customer-id}}",		
+						"type": "text"		
+					},		
+					{		
+						"key": "x-epmp-domain-id",		
+						"value": "{{x-epmp-domain-id}}",		
+						"type": "text"		
+					},		
+					{		
+						"key": "Authorization",		
+						"value": "{{access_token}}",		
+						"type": "text"		
+					}		
+				],		
+				"url": {		
+					"raw": "https://scwp.securitycloud.symantec.com/dcs-service/scwa/v1/apis/org_units/{{ORG_UNIT_ID}}/accounts",		
+					"protocol": "https",		
+					"host": [		
+						"scwp",		
+						"securitycloud",		
+						"symantec",		
+						"com"		
+					],		
+					"path": [		
+						"dcs-service",		
+						"scwa",		
+						"v1",		
+						"apis",		
+						"org_units",		
+						"{{ORG_UNIT_ID}}",		
+						"accounts"		
+					]		
+				}		
+			},		
+			"response": []		
+		},		
+		{
 			"name": "Associate Accounts to an Org Unit",
 			"request": {
 				"method": "PUT",
@@ -804,6 +852,200 @@
 					]
 				}
 			},
+			"response": []
+					},		
+		{		
+			"name": "Delete an Org unit",		
+			"request": {		
+				"method": "DELETE",		
+				"header": [		
+					{		
+						"key": "Content-Type",		
+						"value": "application/json",		
+						"type": "text"		
+					},		
+					{		
+						"key": "x-epmp-customer-id",		
+						"value": "{{x-epmp-customer-id}}",		
+						"type": "text"		
+					},		
+					{		
+						"key": "x-epmp-domain-id",		
+						"value": "{{x-epmp-domain-id}}",		
+						"type": "text"		
+					},		
+					{		
+						"key": "Authorization",		
+						"value": "{{access_token}}",		
+						"type": "text"		
+					}		
+				],		
+				"url": {		
+					"raw": "https://scwp.securitycloud.symantec.com/dcs-service/scwa/v1/apis/org_units/{{ORG_UNIT_ID}}",		
+					"protocol": "https",		
+					"host": [		
+						"scwp",		
+						"securitycloud",		
+						"symantec",		
+						"com"		
+					],		
+					"path": [		
+						"dcs-service",		
+						"scwa",		
+						"v1",		
+						"apis",		
+						"org_units",		
+						"{{ORG_UNIT_ID}}"		
+					]		
+				}		
+			},		
+			"response": []		
+		},		
+		{		
+			"name": "Get Clud Connectios",		
+			"request": {		
+				"method": "GET",		
+				"header": [		
+					{		
+						"key": "Content-Type",		
+						"value": "application/json",		
+						"type": "text"		
+					},		
+					{		
+						"key": "x-epmp-customer-id",		
+						"value": "{{x-epmp-customer-id}}",		
+						"type": "text"		
+					},		
+					{		
+						"key": "x-epmp-domain-id",		
+						"value": "{{x-epmp-domain-id}}",		
+						"type": "text"		
+					},		
+					{		
+						"key": "Authorization",		
+						"value": "{{access_token}}",		
+						"type": "text"		
+					}		
+				],		
+				"url": {		
+					"raw": "https://scwp.securitycloud.symantec.com/dcs-service/dcscloud/v1/cpif/cloud_connections",		
+					"protocol": "https",		
+					"host": [		
+						"scwp",		
+						"securitycloud",		
+						"symantec",		
+						"com"		
+					],		
+					"path": [		
+						"dcs-service",		
+						"dcscloud",		
+						"v1",		
+						"cpif",		
+						"cloud_connections"		
+					]		
+				}		
+			},		
+			"response": []		
+		},		
+		{		
+			"name": "Get Accounts associated to a Cloud Connection",		
+			"request": {		
+				"method": "GET",		
+				"header": [		
+					{		
+						"key": "Content-Type",		
+						"value": "application/json",		
+						"type": "text"		
+					},		
+					{		
+						"key": "x-epmp-customer-id",		
+						"value": "{{x-epmp-customer-id}}",		
+						"type": "text"		
+					},		
+					{		
+						"key": "x-epmp-domain-id",		
+						"value": "{{x-epmp-domain-id}}",		
+						"type": "text"		
+					},		
+					{		
+						"key": "Authorization",		
+						"value": "{{access_token}}",		
+						"type": "text"		
+					}		
+				],		
+				"url": {		
+					"raw": "https://scwp.securitycloud.symantec.com/dcs-service/scwa/v1/apis/connections/{{CLOUD_CONNECTION_ID}}/accounts",		
+					"protocol": "https",		
+					"host": [		
+						"scwp",		
+						"securitycloud",		
+						"symantec",		
+						"com"		
+					],		
+					"path": [		
+						"dcs-service",		
+						"scwa",		
+						"v1",		
+						"apis",		
+						"connections",		
+						"{{CLOUD_CONNECTION_ID}}",		
+						"accounts"		
+					]		
+				}		
+			},		
+			"response": []		
+		},		
+		{		
+			"name": "Delete Cloud Connection",		
+			"request": {		
+				"method": "DELETE",		
+				"header": [		
+					{		
+						"key": "Content-Type",		
+						"value": "application/json",		
+						"type": "text"		
+					},		
+					{		
+						"key": "x-epmp-customer-id",		
+						"value": "{{x-epmp-customer-id}}",		
+						"type": "text"		
+					},		
+					{		
+						"key": "x-epmp-domain-id",		
+						"value": "{{x-epmp-domain-id}}",		
+						"type": "text"		
+					},		
+					{		
+						"key": "Authorization",		
+						"value": "{{access_token}}",		
+						"type": "text"		
+					}		
+				],		
+				"url": {		
+					"raw": "https://scwp.securitycloud.symantec.com/dcs-service/dcscloud/v1/cpif/cloud_connections/{{CLOUD_CONNECTION_ID}}?process_offline=true",		
+					"protocol": "https",		
+					"host": [		
+						"scwp",		
+						"securitycloud",		
+						"symantec",		
+						"com"		
+					],		
+					"path": [		
+						"dcs-service",		
+						"dcscloud",		
+						"v1",		
+						"cpif",		
+						"cloud_connections",		
+						"{{CLOUD_CONNECTION_ID}}"		
+					],		
+					"query": [		
+						{		
+							"key": "process_offline",		
+							"value": "true"		
+						}		
+					]		
+				}		
+			},		
 			"response": []
 		}
 	],
